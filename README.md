@@ -13,6 +13,9 @@ docker run --name test_app -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWO
 ## Running the app
 
 ```bash
+# init env
+cp .env-example .env
+
 # development
 $ npm run start
 
