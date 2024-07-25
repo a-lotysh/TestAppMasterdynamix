@@ -20,6 +20,6 @@ $ npm run start:prod
 ## Init db
 
 ```bash
-# unit tests
+# run first migration
 $ npx prisma migrate dev --name init  
 ```
