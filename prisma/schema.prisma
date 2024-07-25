@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator class {
+  provider = "prisma-class-generator"
+  output = "./generated/classes"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model PartnershipRequest {
+  id          Int      @id @default(autoincrement())
+  companyName String
+  email       String
+}
